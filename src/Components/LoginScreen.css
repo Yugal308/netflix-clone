@@ -1,0 +1,87 @@
+.loginScreen{
+    position: relative;
+    height: 100%;
+    background: url("https://pinkroom-main.s3.amazonaws.com/f75774ea-9a7c-44ea-a7c7-91d1e9df10e6.jpg") center no-repeat;
+    background-size: cover;
+}
+.login_logo{
+    position: fixed;
+    left: 0;
+    width: 110px;
+    object-fit: contain;
+    padding: 20px;
+}
+.login_grad{
+    width: 100%;
+    z-index: 2;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.8) 100%
+    );
+}
+.login_btn{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.login_body{
+    position: absolute;
+    top: 25%;
+    z-index: 2;
+    color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.login_body > h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.login_body > h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.login_body > h5{
+    font-weight: 400;
+}
+.login_input{
+    margin: 20px;
+}
+.login_input > form > input{
+    padding: 10px;
+    outline: none;
+    height: 30px;
+    width: 30%;
+    border: none;
+    max-width: 600px;
+}
+.login_get{
+    padding: 16px 20px;
+    color: #fff;
+    background-color:#e50914;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.login_btn:hover{
+    background-color: #e5091494;
+}
+.login_get:hover{
+    background-color: #e5091494;
+}
