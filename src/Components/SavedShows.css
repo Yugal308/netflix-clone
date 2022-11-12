@@ -1,0 +1,10 @@
+.full{
+    height: 100vh;
+}
+.close{
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    color: gray;
+    font-size: 300;
+}

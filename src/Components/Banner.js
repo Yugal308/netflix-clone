@@ -2,11 +2,13 @@ import React,{useState,useEffect} from 'react'
 import "./Banner.css";
 import axios from "./axios";
 import requests from "./Requests";
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
 
     const [movie,setMovie] = useState([]);
-
+    const navigate = useNavigate();
+    
     useEffect(()=>{
         async function fetchData(){
             const request = await axios.get(requests.fetchNetflixOriginals);
@@ -19,9 +21,6 @@ const Banner = () => {
         }
         fetchData();
     },[]);
-
-    console.log(movie)
-
 
     function truncate(string,n){
         return string?.length > n ? string.substr(0,n-1) + "..." : string; 
@@ -39,7 +38,7 @@ const Banner = () => {
         </h1>
         <div className="banner_buttons">
             <button className="banner_button">Play</button>
-            <button className="banner_button">My List</button>
+            <button className="banner_button" onClick={()=>navigate("/mylist")}>My List</button>
         </div>
         <h1 className="banner_desc">
            {truncate(movie?.overview, 150 )}

@@ -25,7 +25,7 @@ const Nav = () => {
     <div className={`navbar ${show && "nav_black" }`}>
         <div className='nav_content'>
             <img onClick ={() => navigate("/")} src = {logo} alt = "Netflix Logo" className='nav_logo' />
-            <button className='list'>My List</button>
+            <button className='list' onClick={()=>navigate("/mylist")}>My List</button>
             <img onClick ={() => navigate("/profile")} src = {avatar} alt="Avatar" className="nav_avatar" />
         </div>
     </div>

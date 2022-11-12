@@ -31,8 +31,7 @@ const SignupScreen = () => {
             <span className="signupscreen_link" onClick={()=> setSignUp(true)}>Sign Up now. </span>
           </h4>
         </form>  
-      </>)}
-        
+      </>)} 
     </div>
   )
 }
