@@ -8,6 +8,7 @@ import {useDispatch , useSelector} from "react-redux"
 import {login,logout,selectUser} from "./features/userSlice"
 import ProfileScreen from './Components/ProfileScreen';
 import List from './Components/List';
+import MovieScreen from './Components/MovieScreen';
 
 function App() {
   const user = useSelector(selectUser);
@@ -38,6 +39,7 @@ function App() {
           <Route path="/" element={ <HomeScreen />} />
           <Route path="/profile" element={ <ProfileScreen /> } />
           <Route path="/mylist" element={<List />} />
+          <Route path="/details" element={<MovieScreen />} />
         </Routes>) 
         }
       </Router>

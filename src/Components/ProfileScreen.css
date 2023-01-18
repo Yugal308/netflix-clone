@@ -39,9 +39,10 @@
     cursor: pointer;
     width: 100%;
     border: none;
+    border-radius: 5px;
     color: #fff;
     background-color: #e50914;
-    margin-top: 5%;
+    margin-top: 20px;
     font-weight: 600;
     transition: ease 0.5s;
 }
@@ -55,4 +56,30 @@
 .profile_plans > h3{
     border-bottom: 1px solid #282c2d;
     padding-bottom: 10px;
+}
+.plan{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.plan > h4{
+    font-size: 15px;
+    cursor: pointer;
+}
+.plan > h4:hover{
+    color: lightgray;
+}
+.plan_btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #e50914;
+    font-weight: 600;
+    transition: ease 0.5s;
+}
+.plan_btn:hover{
+    background-color: #e5091494;
 }

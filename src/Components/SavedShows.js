@@ -11,9 +11,10 @@ const SavedShows = () => {
     const base_url = "https://image.tmdb.org/t/p/original/";
     const [movies,setMovies] = useState([]);
     const user = useSelector(selectUser);
-    const movieRef = doc(db,"data",`${user?.email}`);
+    const movieRef = doc(db,"users",`${user?.email}`);
+    
     useEffect(()=>{
-        onSnapshot(doc(db,'data',`${user?.email}`),(doc)=>{
+        onSnapshot(doc(db,'users',`${user?.email}`),(doc)=>{
             setMovies(doc.data()?.savedShows);
         })
     },[user.email])

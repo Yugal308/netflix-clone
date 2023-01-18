@@ -19,6 +19,18 @@ const ProfileScreen = () => {
                     <h2>{user.email}</h2>
                     <div className="profile_plans">
                         <h3>Plans</h3>
+                        <div className="plan">
+                            <h4>Netflix Standard</h4> 
+                            <button className="plan_btn">Subscribe</button>
+                        </div>
+                        <div className="plan">
+                            <h4>Netflix Basic</h4> 
+                            <button className="plan_btn">Subscribe</button>
+                        </div>
+                        <div className="plan">
+                            <h4>Netflix Premium</h4> 
+                            <button className="plan_btn">Subscribe</button>
+                        </div>
                         <button onClick={ ()=> auth.signOut()} 
                                 className="profile_signout">
                                     Sign Out

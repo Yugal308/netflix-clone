@@ -12,12 +12,11 @@ const Register = () => {
     e.preventDefault();
     auth.createUserWithEmailAndPassword(
       emailRef.current.value,
-      passwordRef.current.value
-    ).then(setDoc(doc(db,'data',emailRef.current.value),{
+      passwordRef.current.value,
+    ).then(setDoc(doc(db,'users',emailRef.current.value),{
       savedShows:[],
       name: nameRef.current.value
-    }))
-    .catch((error)=>{
+    })).catch((error)=>{
         alert(error.message);
     });
   };
